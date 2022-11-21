@@ -94,3 +94,5 @@ document.body.addEventListener("click", (event) => {
 
     }, 100)
 })
+
+alert(1);
