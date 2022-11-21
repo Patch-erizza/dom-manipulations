@@ -1,0 +1,84 @@
+body {
+    position: relative;
+}
+.red-square {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: red;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background: teal;
+}
+
+.user-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("user-avatar.svg");
+    position: relative;
+    overflow: visible;
+}
+
+.app-body {
+    background: navy;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    width: 140px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 4px 4px darkgray;
+}
+
+.menu-item {
+    padding: 4px 6px;
+    background: lightgray;
+    width: 100%;
+    cursor: pointer;
+}
+
+._expandable {
+    background: darkgray;
+}
+.sub-menu-item {
+    padding: 4px 6px;
+    background: whitesmoke;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modal-window {
+    width: 420px;
+    height: 170px;
+    background-color: #303030;
+    position: fixed;
+    border-radius: 10px;
+    top: calc(50% - 85px);
+    left: calc(50% - 210px);
+    z-index: 1;
+}
+.back-drop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60,60,60, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
