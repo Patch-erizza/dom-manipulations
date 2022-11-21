@@ -85,7 +85,6 @@ document.body.addEventListener("click", (event) => {
     clickedSquare.style.left = (event.x - (clickedSquare.clientWidth / 2)) + "px";
     clickedSquare.style.top = (event.y - (clickedSquare.clientHeight / 2)) + "px";
     setInterval(() => {
-        console.log("HELLO!");
         clickedSquare.style.top = (clickedSquare.offsetTop + 10) + 'px';
         const screenHeight = document.body.offsetHeight;
         if (clickedSquare.offsetTop >= screenHeight) {
@@ -94,3 +93,5 @@ document.body.addEventListener("click", (event) => {
 
     }, 100)
 })
+
+alert(1);
