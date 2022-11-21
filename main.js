@@ -6,12 +6,16 @@ const userAvatarElement = document.getElementsByClassName('user-avatar').item(0)
 let isMenuOpened = false;
 let isSubMenuOpened = false;
 
+
+
 userAvatarElement.addEventListener('click', (event) => {
     const clickedElement = event.target;
     if (!clickedElement.parentNode.classList.contains("dropdown-menu")) {
         createMenu()
     }
 });
+
+
 
 function createMenu() {
     if (!isMenuOpened) {
